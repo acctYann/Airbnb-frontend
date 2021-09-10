@@ -39,7 +39,7 @@ function ProfileScreen({ userToken, userId, setToken, setId }) {
   // Fonction conservée en dehors de useEffet à appeler ailleurs :
   const fetchData = async () => {
     try {
-      // Fetching user data:
+      // Récupération des données utilisateur :
       const response = await axios.get(
         `https://express-airbnb-api.herokuapp.com/user/${userId}`,
         {
@@ -145,7 +145,7 @@ function ProfileScreen({ userToken, userId, setToken, setId }) {
   };
 
   const getFromLibrary = async () => {
-    // Ask permission to access camera roll:
+    // Demander la permission d'accéder à la pellicule :
     const libraryPermission =
       await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (libraryPermission.status === "granted") {
@@ -156,7 +156,7 @@ function ProfileScreen({ userToken, userId, setToken, setId }) {
   };
 
   const getFromCamera = async () => {
-    // Ask permission to access camera and camera roll:
+    // Demander la permission d'accéder à la caméra et à la pellicule :
     const cameraPermission = await ImagePicker.requestCameraPermissionsAsync();
     const libraryPermission =
       await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -170,7 +170,7 @@ function ProfileScreen({ userToken, userId, setToken, setId }) {
     }
   };
 
-  // Hide the message after 2.5 seconds:
+  // Masquer le message après 2,5 secondes :
   if (displayMessage) {
     setTimeout(() => setDisplayMessage(false), 2500);
   }

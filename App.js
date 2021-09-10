@@ -54,24 +54,20 @@ const App = () => {
   };
 
   useEffect(() => {
-    // Fetch the token from storage then navigate to our appropriate place
+    // Récupérer le token dans le stockage, puis accéder à notre endroit approprié
     const bootstrapAsync = async () => {
-      // We should also handle error for production apps
+      // Nous devons également gérer les erreurs pour les applications de production
       const userToken = await AsyncStorage.getItem("userToken");
-
-      // This will switch to the App screen or Auth screen and this loading
-      // screen will be unmounted and thrown away.
       setIsLoading(false);
       setUserToken(userToken);
     };
-
     bootstrapAsync();
   }, []);
 
   return (
     <NavigationContainer>
-      {isLoading ? null : userToken === null ? ( // We haven't finished checking for the token yet
-        // No token found, user isn't signed in
+      {isLoading ? null : userToken === null ? ( // Nous n'avons pas encore fini de vérifier le token
+        // Aucun token trouvé, l'utilisateur n'est pas connecté
         <Stack.Navigator>
           <Stack.Screen name="SignIn" options={{ headerShown: false }}>
             {() => <SignInScreen setToken={setToken} />}
@@ -81,7 +77,7 @@ const App = () => {
           </Stack.Screen>
         </Stack.Navigator>
       ) : (
-        // User is signed in
+        // L'utilisateur est connecté
         <Stack.Navigator>
           <Stack.Screen name="Tab" options={{ headerShown: false }}>
             {() => (
