@@ -15,7 +15,7 @@
 </h2>
 <br/>
 
-Project inspired by Airbnb app.<br>
+Project inspired by <a href="https://expo.dev/@yannponcet/NavApp">Airbnb</a>.<br>
 API from <a href="https://github.com/lereacteur/express-airbnb">Le Reacteur</a>.
 <br/> 
 <br/>
