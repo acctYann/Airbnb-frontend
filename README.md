@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://expo.dev/@yannponcet/NavApp">
+  <a href="https://exp.host/@yannponcet/airbnb">
     <img src="https://res.cloudinary.com/dssoozni5/image/upload/v1631263086/airbnb/readme/airbnb_g1ceul.jpg" alt ="Airbnb Project"  />
   </a>
 </p>
@@ -15,7 +15,7 @@
 </h2>
 <br/>
 
-Project inspired by <a href="https://expo.dev/@yannponcet/NavApp">Airbnb</a>.<br>
+Project inspired by <a href="https://exp.host/@yannponcet/airbnb">Airbnb</a>.<br>
 API from <a href="https://github.com/lereacteur/express-airbnb">Le Reacteur</a>.
 <br/> 
 <br/>
