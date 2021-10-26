@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://exp.host/@yannponcet/airbnb">
+  <a href="https://exp.host/@yannponcet/airbnb" target="_blank">
     <img src="https://res.cloudinary.com/dssoozni5/image/upload/v1631263086/airbnb/readme/airbnb_g1ceul.jpg" alt ="Airbnb Project"  />
   </a>
 </p>
@@ -15,7 +15,7 @@
 </h2>
 <br/>
 
-Project inspired by <a href="https://exp.host/@yannponcet/airbnb">Airbnb</a>.<br>
+Project inspired by <a href="https://exp.host/@yannponcet/airbnb" target="_blank">Airbnb</a>.<br>
 API from <a href="https://github.com/lereacteur/express-airbnb">Le Reacteur</a>.
 <br/> 
 <br/>
@@ -61,6 +61,6 @@ expo start
 <br/>
 
 <h2>Contact</h2>
-<p>Visit my <a href="https://www.linkedin.com/in/yannponcet"> LinkedIn</a> and <a href="https://github.com/acctYann"> GitHub</a>.</p>
+<p>Visit my <a href="https://www.linkedin.com/in/yannponcet" target="_blank"> LinkedIn</a> and <a href="https://github.com/acctYann" target="_blank"> GitHub</a>.</p>
 <br/>
 
